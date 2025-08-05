@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biodata Siswa - Anastasya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #ffd6ec, #ffe4f5);
+            color: #333;
+        }
+
+        nav {
+            background-color: #f48fb1;
+            padding: 14px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        nav .brand {
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 20px;
+        }
+
+        .container {
+            max-width: 550px;
+            background-color: #ffffffdd;
+            margin: 60px auto;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ec407a;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 16px;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            background-color: #fff0f6;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 100%;
+            background-color: #f06292;
+            color: white;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #ec407a;
+            transform: scale(1.02);
+        }
+
+        footer {
+            background-color: #f48fb1;
+            color: white;
+            text-align: center;
+            padding: 18px 10px;
+            margin-top: 60px;
+            border-top: 4px solid #f06292;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 30px 20px;
+                padding: 25px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            nav a {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="brand">📘 BIODATA SISWA</div>
+        <div>
+            <a href="#form">Formulir</a>
+            <a href="#footer">Kontak</a>
+        </div>
+    </nav>
+
+    <div class="container" id="form">
+        <form action="" method="POST" enctype="multipart/form-data">
+            <h1>📄 Formulir Biodata</h1>
+
+            <label>Nama Lengkap</label>
+            <input type="text" name="nama Lengkap" required>
+
+            <label>Kelas</label>
+            <input type="number" name="kelas" required>
+
+            <label>Jurusan</label>
+            <select name="pilih" required>
+                <option disabled selected>Pilih</option>
+                <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+                <option value="Keperawatan">Keperawatan</option>
+                <option value="Teknik Sepeda Motor">Teknik Sepeda Motor</option>
+            </select>
+
+            <label>Jenis Kelamin</label>
+            <select name="pilih" required>
+                <option disabled selected>Pilih</option>
+                <option value="Perempuan">Perempuan</option>
+                <option value="Laki-Laki">Laki-Laki</option>
+            </select>
+
+            <label>Tempat Tanggal Lahir</label>
+            <input type="text" name="Tanggal lahir" required>
+
+            <label>Alamat</label>
+            <textarea name="Alamat" rows="4" required></textarea>
+
+            <label>Telepon</label>
+            <input type="number" name="Telepon" required>
+
+            <button type="submit" name="submit">Kirim Formulir</button>
+        </form>
+    </div>
+
+    <footer id="footer">
+        &copy; 2025 Anastasya A.F — All Rights Reserved 💖
+    </footer>
+
+</body>
+</html>
